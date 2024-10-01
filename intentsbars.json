@@ -1,0 +1,40 @@
+{"intents": [
+    {"tag" : "Задачи Alpha BI",
+     "patterns": ["Какие задачи решает Alpha BI ?","Задачи Alpha BI", "Что решает Alpha BI ?"],
+     "responses":["Ответ на этот вопрос вы получите по ссылке , посмотрев видео : https://cloud.bars.group/apps/files/?dir=/%D0%9E%D0%B1%D1%89%D0%B8%D0%B5%20%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/%D0%9E%D0%B1%D1%89%D0%B8%D0%B5%20%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D0%91%D0%A6/BI/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8B/Alpha%20BI/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8&fileid=14179748"] 
+    },
+    {"tag" : "Туалет",
+     "patterns": ["Где уборная комната ?","Где туалет ?"],
+     "responses":["В зависимости от офиса. В Центральном Казанском офисе есть по одной М и Ж уборной на каждом этаже."] 
+    },
+     {"tag" : "ETL",
+     "patterns": ["Какие режимы работы ETL процесса есть ?", "Расскажи про ETL на Alpha BI ?","Хочу узнать про ETL в Alpha BI"],
+     "responses":["Про ETL можно вспомнить по ссылке https://conf.bars.group/pages/viewpage.action?pageId=57392925 но не забывай , что в целом ETL это просто расшифровка Extract Transform Load то есть способ обработки данных"] 
+    },
+    {"tag" : "DWH",
+     "patterns": ["Что такое DWH ? ", "Хочу узнать про DWH в Alpha BI"],
+     "responses":["Data Warehouse (DWH) — хранилище, предназначенное для сбора и аналитической обработки исторических данных организации.
+Позволяет объединить данные из различных систем и источников в одном месте, а также улучшить качество данных и скорость доступа к ним.
+Про DWH в Alpha BI можно узнать по ссылке https://conf.bars.group/pages/viewpage.action?pageId=49586442"] 
+    },
+    {"tag": "Регламенты и инструкции общего характера",
+     "patterns": ["Хочу узнать о регламентах общего характера в БАРС Груп ","Регламенты и инструкции общего характера"],
+     "responses": ["Обо всех регламентах можно вспомнить по ссылке: https://conf.bars.group/pages/viewpage.action?pageId=31315646"]
+     },
+     {"tag" : "Метод пузырька",
+     "patterns": ["Расскажи мне о методе пузырька Python","Предложи метод простой сортировки Python", "Нужна сортировка Python"],
+     "responses":["
+from random import randint \n
+N = 10 \n
+a = [] \n
+for i in range(N): \n
+    a.append(randint(1, 99)) \n 
+print(a) \n
+for i in range(N-1): \n 
+    for j in range(N-1-i): \n
+        if a[j] > a[j+1]: \n
+            a[j], a[j+1] = a[j+1], a[j] \n 
+print(a) \n"]
+}
+]
+}
